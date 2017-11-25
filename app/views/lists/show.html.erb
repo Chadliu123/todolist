@@ -1,0 +1,6 @@
+<div class="itembox">
+  <p class="due_date">Due Date : <%= @list.date %></p>
+  <p class="title"><%= @list.name %></p>
+  <%= simple_format @list.note, class: 'note' %>
+  <%= link_to 'Back to index', lists_path %>
+</div>
